@@ -1,0 +1,108 @@
+/* Reset some default styles */
+body, h1, h4, label, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background and font for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1378871.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for forms */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box styles for forms */
+.box {
+    width: 100%;
+    max-width: 400px; /* Set a max width */
+    margin: 20px;
+}
+
+/* Form styles */
+.box-register {
+    background-color: rgba(255, 255, 255, 0.6); /* Adjusted for more transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Padding for the form */
+}
+
+/* Headings styles */
+h3 {
+    color: #333;
+    font-size: 24px; /* Font size for the main heading */
+    text-align: center;
+}
+
+h4 {
+    color: #777;
+    font-size: 16px; /* Font size for subheading */
+    text-align: center;
+}
+
+/* Input group styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styles */
+input[type="email"],
+input[type="password"] {
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Space between inputs */
+    font-size: 14px; /* Font size for inputs */
+}
+
+/* Input focus effect */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #28a745; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styles */
+.input-submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px; /* Padding for button */
+    cursor: pointer;
+    font-size: 14px; /* Font size for button */
+}
+
+.input-submit:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Link styles */
+#sign {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#sign:hover {
+    text-decoration: underline; /* Underline on hover */
+}

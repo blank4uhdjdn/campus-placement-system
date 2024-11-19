@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, h2, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background and font for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('1378871.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main container for forms */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Set a max width for the container */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Box styles for forms */
+.box {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px; /* Padding for the form */
+}
+
+/* Headings styles */
+h2 {
+    color: #333;
+    font-size: 28px; /* Font size for the main heading */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Input group styles */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styles */
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styles */
+input[type="text"],
+textarea {
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Space between inputs */
+    font-size: 14px; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Textarea field styles */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #28a745; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px; /* Padding for button */
+    cursor: pointer;
+    font-size: 16px; /* Font size for button */
+    width: 100%;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Success/Error messages */
+.success-message, .error-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.success-message {
+    background-color: #28a745; /* Green for success */
+}
+
+.error-message {
+    background-color: #dc3545; /* Red for errors */
+}
